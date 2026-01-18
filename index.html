@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZENWILDROAM — Wellness Photography</title>
+    <title>zen • wild • om — Wellness Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Questrial&display=swap" rel="stylesheet">
@@ -136,12 +136,12 @@
 
         /* ==================== HERO ==================== */
         .hero {
-            min-height: 85vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 8rem 2rem 5rem;
+            padding: 6rem 2rem 3rem;
             text-align: center;
             background: var(--bg-primary);
         }
@@ -243,6 +243,12 @@
             object-fit: cover;
         }
 
+        .gallery-item picture {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
         .gallery-item img {
             width: 100%;
             height: 100%;
@@ -300,9 +306,10 @@
 
         .contact-availability {
             margin-bottom: 2.5rem;
-            font-size: 0.95rem;
+            font-size: 1.3rem;
             font-style: normal;
-            opacity: 0.5;
+            opacity: 0.7;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .contact-email {
@@ -621,8 +628,8 @@
             }
 
             .hero {
-                min-height: 70vh;
-                padding: 5.5rem 1.5rem 3rem;
+                min-height: 65vh;
+                padding: 5rem 1.5rem 2rem;
             }
 
             h1 {
@@ -737,8 +744,8 @@
             }
 
             .hero {
-                min-height: 65vh;
-                padding: 5rem 1.25rem 2.5rem;
+                min-height: 60vh;
+                padding: 4.5rem 1.25rem 1.5rem;
             }
 
             h1 {
@@ -796,8 +803,8 @@
             }
 
             .hero {
-                min-height: 60vh;
-                padding: 4.5rem 1rem 2rem;
+                min-height: 55vh;
+                padding: 4rem 1rem 1rem;
             }
 
             h1 {
@@ -895,10 +902,10 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">Zenwildom Photography</a>
+        <a href="#" class="logo">zen • wild • om</a>
         <ul class="nav-links">
             <li><a href="#gallery">Portfolio</a></li>
-            <li><a href="zenwildroamabout.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="menu-btn" aria-label="Menu">
@@ -911,7 +918,7 @@
     <section class="hero">
         <h1>Capturing Moments<span>of stillness, movement & the path inward</span></h1>
         <p class="hero-description">Where intention meets authenticity</p>
-        <div class="scroll-indicator">Scroll</div>
+        <div class="scroll-indicator">Discover</div>
     </section>
 
     <!-- Gallery Grid -->
@@ -921,17 +928,18 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <h2>Let's co-create your visual story</h2>
-        <p class="contact-availability">Partnering with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
-        <a href="mailto:hello@zenwildroam.com" class="contact-email">hello@zenwildroam.com</a>
-        <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Vimeo</a>
-        </div>
+        <h2>Photography & Visual Storytelling</h2>
+        <p class="contact-availability">I work with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
+        <a href="mailto:hello@zenwildroam.com" class="contact-email">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                <path d="M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor"/>
+            </svg>
+            hello@zenwildroam.com
+        </a>
     </section>
 
     <footer>
-        <p>© 2026 Zenwildom</p>
+        <p>© 2026 zen • wild • om</p>
     </footer>
 
     <!-- Lightbox -->
@@ -954,24 +962,32 @@
     </div>
 
     <script>
-        // Image data - your portfolio images
+        // Image data - using optimized images (metadata stripped, responsive sizes)
         const images = [
             // Row 1: Portraits
-            { src: 'portfolio/DSCF1679.jpg', title: 'Stillness', type: 'image' },
-            { src: 'portfolio/DSCF1411.jpg', title: 'Flow', type: 'image' },
-            { src: 'portfolio/DSCF1424.jpg', title: 'Journey', type: 'image' },
+            { id: 'dscf1424', title: 'Journey', type: 'image' },
+            { id: 'dscf1411', title: 'Flow', type: 'image' },
+            { id: 'dscf1679', title: 'Stillness', type: 'image' },
             // Row 2-3: Landscapes
-            { src: 'portfolio/DSCF3619.JPG', title: 'Connection', type: 'image' },
-            { src: 'portfolio/DSCF1591.jpg', title: 'Community', type: 'image' },
-            { src: 'portfolio/DSCF1447.jpg', title: 'Light', type: 'image' },
-            { src: 'portfolio/DSCF0801.JPG', title: 'Breath', type: 'image' },
-            { src: 'portfolio/DSCF1314 2.jpg', title: 'Presence', type: 'image' },
-            { src: 'portfolio/DSCF1420 2.jpg', title: 'Ground', type: 'image' },
+            { id: 'dscf1447', title: 'Light', type: 'image' },
+            { id: 'dscf1591', title: 'Community', type: 'image' },
+            { id: 'dscf3619', title: 'Connection', type: 'image' },
+            { id: 'dscf0801', title: 'Breath', type: 'image' },
+            { id: 'dscf1314-2', title: 'Presence', type: 'image' },
+            { id: 'dscf1420-2', title: 'Ground', type: 'image' },
             // Row 4: Portraits
-            { src: 'portfolio/DSCF2274.jpg', title: 'Serenity', type: 'image' },
-            { src: 'portfolio/IMG_0440.jpg', title: 'Balance', type: 'image' },
             { src: 'portfolio/IMG_8129.MP4', title: 'Motion', type: 'video' },
+            { id: 'img0440', title: 'Balance', type: 'image' },
+            { id: 'dscf2274', title: 'Serenity', type: 'image' },
         ];
+
+        // Helper to get optimized image paths
+        function getImagePaths(id, size) {
+            return {
+                webp: `portfolio/optimized/${size}/${id}.webp`,
+                jpg: `portfolio/optimized/${size}/${id}.jpg`
+            };
+        }
 
         let currentIndex = 0;
         const lightbox = document.getElementById('lightbox');
@@ -980,7 +996,7 @@
         const thumbnailStrip = document.getElementById('thumbnailStrip');
         const galleryGrid = document.getElementById('galleryGrid');
 
-        // Initialize gallery
+        // Initialize gallery with responsive images
         function initGallery() {
             images.forEach((img, index) => {
                 const item = document.createElement('div');
@@ -992,7 +1008,24 @@
                     item.addEventListener('mouseenter', () => video.play());
                     item.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
                 } else {
-                    item.innerHTML = `<img src="${img.src}" alt="${img.title}" loading="lazy">`;
+                    // Use picture element with WebP and responsive srcset
+                    const thumb = getImagePaths(img.id, 'thumb');
+                    const medium = getImagePaths(img.id, 'medium');
+                    const large = getImagePaths(img.id, 'large');
+
+                    item.innerHTML = `
+                        <picture>
+                            <source
+                                srcset="${thumb.webp} 400w, ${medium.webp} 800w, ${large.webp} 1200w"
+                                sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                type="image/webp">
+                            <img
+                                src="${medium.jpg}"
+                                srcset="${thumb.jpg} 400w, ${medium.jpg} 800w, ${large.jpg} 1200w"
+                                sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                alt="${img.title}"
+                                loading="lazy">
+                        </picture>`;
                 }
 
                 item.addEventListener('click', () => openLightbox(index));
@@ -1003,15 +1036,16 @@
         // Initialize lightbox thumbnails
         function initLightbox() {
             images.forEach((img, index) => {
-                const thumb = document.createElement('div');
-                thumb.className = 'thumbnail';
+                const thumbEl = document.createElement('div');
+                thumbEl.className = 'thumbnail';
                 if (img.type === 'video') {
-                    thumb.innerHTML = `<video src="${img.src}" muted></video>`;
+                    thumbEl.innerHTML = `<video src="${img.src}" muted></video>`;
                 } else {
-                    thumb.innerHTML = `<img src="${img.src}" alt="${img.title}">`;
+                    const thumbPath = getImagePaths(img.id, 'thumb');
+                    thumbEl.innerHTML = `<img src="${thumbPath.webp}" alt="${img.title}">`;
                 }
-                thumb.onclick = () => goToImage(index);
-                thumbnailStrip.appendChild(thumb);
+                thumbEl.onclick = () => goToImage(index);
+                thumbnailStrip.appendChild(thumbEl);
             });
         }
 
@@ -1052,11 +1086,15 @@
                 videoElement.playsInline = true;
                 lightboxImageContainer.appendChild(videoElement);
             } else {
+                // Use full-size optimized image for lightbox
+                const fullPath = getImagePaths(img.id, 'full');
                 const imgElement = document.createElement('img');
-                imgElement.src = img.src;
+                imgElement.src = fullPath.webp;
                 imgElement.alt = img.title;
                 imgElement.className = 'lightbox-image';
                 imgElement.onload = () => imgElement.classList.add('loaded');
+                // Fallback to JPEG if WebP fails
+                imgElement.onerror = () => { imgElement.src = fullPath.jpg; };
                 lightboxImageContainer.appendChild(imgElement);
             }
 

@@ -1,0 +1,12 @@
+{
+  "name": "zenwildom-portfolio",
+  "version": "1.0.0",
+  "description": "Image optimization for Zen Wild Om photography portfolio",
+  "scripts": {
+    "optimize": "node scripts/optimize-images.js",
+    "optimize:clean": "rm -rf portfolio/optimized && node scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.2"
+  }
+}

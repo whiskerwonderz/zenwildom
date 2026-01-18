@@ -1,4 +1,33 @@
+# System files
 .DS_Store
 *.log
+
+# Dependencies
 node_modules/
+
+# Environment
 .env
+
+# Original high-res images (only commit optimized versions)
+# Run `npm run optimize` to generate optimized images from originals
+portfolio/*.jpg
+portfolio/*.jpeg
+portfolio/*.JPG
+portfolio/*.JPEG
+portfolio/*.png
+portfolio/*.PNG
+
+# Video files (typically too large for git)
+# Exception: IMG_8129.MP4 is included (11MB, within GitHub limits)
+portfolio/*.mp4
+portfolio/*.MP4
+portfolio/*.mov
+portfolio/*.MOV
+!portfolio/IMG_8129.MP4
+
+# Audio files
+portfolio/*.mp3
+portfolio/*.MP3
+
+# Keep optimized images (these are committed)
+!portfolio/optimized/

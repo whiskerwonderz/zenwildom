@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — ZENWILDROAM</title>
+    <title>About — zen • wild • om</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Questrial&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
@@ -138,13 +138,12 @@
 
         /* ==================== PAGE HEADER ==================== */
         .page-header {
-            min-height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 8rem 2rem 4rem;
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 8rem 2rem 2rem;
             background: var(--bg-primary);
         }
 
@@ -153,8 +152,9 @@
             font-size: clamp(3rem, 8vw, 5rem);
             font-weight: 300;
             color: var(--text-primary);
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
             letter-spacing: -0.02em;
+            grid-column: 2;
         }
 
         .page-header p {
@@ -162,8 +162,7 @@
             font-style: italic;
             font-size: 1.1rem;
             color: var(--text-muted);
-            max-width: 450px;
-            margin: 0 auto;
+            grid-column: 2;
         }
 
         /* ==================== ABOUT SECTION ==================== */
@@ -195,6 +194,12 @@
             border: 1px solid var(--accent-primary);
             opacity: 0.4;
             z-index: -1;
+        }
+
+        .about-image picture {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
         .about-image img {
@@ -245,9 +250,9 @@
 
         .signature {
             font-family: 'Dancing Script', cursive !important;
-            font-size: 5rem !important;
+            font-size: 3rem !important;
             color: var(--accent-primary);
-            margin-top: 3rem;
+            margin-top: 2.5rem;
             text-align: left;
         }
 
@@ -427,8 +432,8 @@
             }
 
             .page-header {
-                min-height: 45vh;
-                padding: 7rem 2rem 3rem;
+                padding: 7rem 2rem 2rem;
+                gap: 3rem;
             }
 
             .about {
@@ -468,8 +473,8 @@
             }
 
             .page-header {
-                min-height: 40vh;
-                padding: 5.5rem 1.5rem 2.5rem;
+                display: block;
+                padding: 5.5rem 1.5rem 1.5rem;
             }
 
             .page-header h1 {
@@ -715,10 +720,10 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="zenwildroam.html" class="logo">Zenwildom Photography</a>
+        <a href="index.html" class="logo">zen • wild • om</a>
         <ul class="nav-links">
-            <li><a href="zenwildroam.html">Portfolio</a></li>
-            <li><a href="zenwildroamabout.html" class="active">About</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html" class="active">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="menu-btn" aria-label="Menu">
@@ -736,13 +741,24 @@
     <!-- About -->
     <section class="about">
         <div class="about-image">
-            <div class="placeholder">Your portrait here</div>
+            <picture>
+                <source
+                    srcset="portfolio/optimized/thumb/dscf6034-2-copy.webp 400w, portfolio/optimized/medium/dscf6034-2-copy.webp 800w, portfolio/optimized/large/dscf6034-2-copy.webp 1200w"
+                    sizes="(max-width: 768px) 280px, 400px"
+                    type="image/webp">
+                <img
+                    src="portfolio/optimized/medium/dscf6034-2-copy.jpg"
+                    srcset="portfolio/optimized/thumb/dscf6034-2-copy.jpg 400w, portfolio/optimized/medium/dscf6034-2-copy.jpg 800w, portfolio/optimized/large/dscf6034-2-copy.jpg 1200w"
+                    sizes="(max-width: 768px) 280px, 400px"
+                    alt="Crystal"
+                    loading="lazy">
+            </picture>
         </div>
         <div class="about-content">
-            <p>Photography, for me, is an act of stillness and presence. The same intention we bring to the mat, to meditation, to retreat, and to our inward journey. That deep attention to the present moment is what I carry behind the camera.</p>
-            <p>I completed my first yoga teacher training in Costa Rica in 2020 and have since taught in Panama, Ecuador, Hong Kong and Thailand. I am also trained to guide gong baths, breathwork, and the Navakaraṇa self-transformation methodology. These practices shape how I see, listen, capture moments and curate stories.</p>
-            <p>Somewhere along the way, the camera became my practice.</p>
-            <p>I work with yoga teachers, eco-lodges and retreat hosts, holistic wellness brands. My approach is quiet and intuitive, focused on documenting what is already there. Just honest, beautiful presence.</p>
+            <p>Photography, for me, is an act of stillness and presence. The same intention we bring to the mat, to meditation, and to our inward journey. That deep attention to the present moment is what I carry behind the camera.</p>
+            <p>My path as a teacher began in Costa Rica in 2020. Since then, I have guided yoga across continents—Panama, Ecuador, Portugal, Hong Kong and Thailand. I have also trained to guide gong baths and the Navakaraṇa methodology, deepening my holistic practice. These practices shape how I see, listen, capture moments and curate stories.</p>
+            <p>Somewhere along the journey, the camera became my practice.</p>
+            <p>I work with yoga teachers and studios, eco-lodges and retreat hosts, holistic wellness and earth-inspired brands. My approach is quiet and intuitive, focused on documenting what is already there. Just honest, beautiful presence.</p>
             <p>When I am not behind the camera, you will find me in my own practice and explorations—wild mountain trails, quiet islands, sunlit rice paddies—wherever stillness meets the untamed. Always drawn to the roads less travelled.</p>
             <p>If this resonates, I would love to document your work.</p>
             <p class="signature">Crystal</p>
@@ -758,34 +774,35 @@
             <div class="service">
                 <div class="service-icon">○</div>
                 <h3>Retreat Documentation</h3>
-                <p>Immersive storytelling from morning practice, evening stillness to vibrant connections. Capturing the spirit of your retreat as it unfolds.</p>
+                <p>Photography-focused visual storytelling that captures the essence of your retreat or eco-lodge experience.</p>
             </div>
             <div class="service">
                 <div class="service-icon">△</div>
-                <h3>Brand & Portrait Sessions</h3>
-                <p>Imagery for yoga teachers, wellness practitioners, and holistic brands. Your presence, your practice, your story.</p>
+                <h3>Brand & Portrait Photography</h3>
+                <p>Photoshoot for yoga teachers, wellness practitioners, and holistic brands. Your presence, your practice, your story.</p>
             </div>
             <div class="service">
                 <div class="service-icon">□</div>
                 <h3>Movement & Video</h3>
-                <p>Videography that honours the flow—for your website, social, or promotional use.</p>
+                <p>Short-form video content that honours the flow. For website, social, or mindful promotional content.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <h2>Let's co-create your visual story</h2>
-        <p>Partnering with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
-        <a href="mailto:hello@zenwildroam.com" class="contact-email">hello@zenwildroam.com</a>
-        <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Vimeo</a>
-        </div>
+        <h2>Photography & Visual Storytelling</h2>
+        <p>I work with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
+        <a href="mailto:hello@zenwildroam.com" class="contact-email">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                <path d="M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor"/>
+            </svg>
+            hello@zenwildroam.com
+        </a>
     </section>
 
     <footer>
-        <p>© 2026 Zenwildom</p>
+        <p>© 2026 zen • wild • om</p>
     </footer>
 </body>
 </html>
