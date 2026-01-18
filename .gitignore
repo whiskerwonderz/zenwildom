@@ -1,33 +1,84 @@
-# System files
+# ===================
+# System Files
+# ===================
 .DS_Store
+Thumbs.db
 *.log
+*.tmp
+*.temp
 
+# ===================
+# IDE / Editor
+# ===================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===================
 # Dependencies
+# ===================
 node_modules/
 
-# Environment
+# ===================
+# Environment & Secrets
+# ===================
 .env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
+config.local.js
 
-# Original high-res images (only commit optimized versions)
-# Run `npm run optimize` to generate optimized images from originals
+# ===================
+# Original High-Res Images
+# ===================
+# Only commit optimized versions to keep repo lean
+# Run `npm run optimize` to generate from originals
 portfolio/*.jpg
 portfolio/*.jpeg
 portfolio/*.JPG
 portfolio/*.JPEG
 portfolio/*.png
 portfolio/*.PNG
+portfolio/*.tiff
+portfolio/*.TIFF
+portfolio/*.raw
+portfolio/*.RAW
+portfolio/*.cr2
+portfolio/*.CR2
+portfolio/*.nef
+portfolio/*.NEF
 
-# Video files (typically too large for git)
-# Exception: IMG_8129.MP4 is included (11MB, within GitHub limits)
+# ===================
+# Video & Audio Files
+# ===================
+# Too large for git (exception: IMG_8129.MP4)
 portfolio/*.mp4
 portfolio/*.MP4
 portfolio/*.mov
 portfolio/*.MOV
-!portfolio/IMG_8129.MP4
-
-# Audio files
+portfolio/*.avi
+portfolio/*.AVI
 portfolio/*.mp3
 portfolio/*.MP3
+portfolio/*.wav
+portfolio/*.WAV
+!portfolio/IMG_8129.MP4
 
-# Keep optimized images (these are committed)
+# ===================
+# Keep Optimized Images
+# ===================
 !portfolio/optimized/
+
+# ===================
+# Build Artifacts
+# ===================
+dist/
+build/
+*.min.js
+*.min.css
