@@ -612,6 +612,19 @@
 
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: rgba(247,248,247,0.98);
+                padding: 1.5rem 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid rgba(109,139,139,0.08);
+            }
+
+            .nav-links.active {
+                display: flex;
             }
 
             .menu-btn {
@@ -1137,6 +1150,14 @@
         // Initialize
         initGallery();
         initLightbox();
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
