@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zen • wild • om — Wellness Photography</title>
+    <link rel="icon" href="zen-wild-om_favicon_1768766080_053b9644.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Questrial&display=swap" rel="stylesheet">
@@ -306,10 +307,10 @@
 
         .contact-availability {
             margin-bottom: 2.5rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-style: normal;
             opacity: 0.7;
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Questrial', sans-serif;
         }
 
         .contact-email {
@@ -906,7 +907,7 @@
         <ul class="nav-links">
             <li><a href="#gallery">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:zen.wild.om@gmail.com">Contact</a></li>
         </ul>
         <button class="menu-btn" aria-label="Menu">
             <span></span>
@@ -930,16 +931,15 @@
     <section class="contact" id="contact">
         <h2>Photography & Visual Storytelling</h2>
         <p class="contact-availability">I work with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
-        <a href="mailto:hello@zenwildroam.com" class="contact-email">
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+        <a href="mailto:zen.wild.om@gmail.com" class="contact-email" aria-label="Send email">
+            <svg width="24" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor"/>
             </svg>
-            hello@zenwildroam.com
         </a>
     </section>
 
     <footer>
-        <p>© 2026 zen • wild • om</p>
+        <p>© 2026 zen • wild • om photography</p>
     </footer>
 
     <!-- Lightbox -->
@@ -965,20 +965,20 @@
         // Image data - using optimized images (metadata stripped, responsive sizes)
         const images = [
             // Row 1: Portraits
-            { id: 'dscf1424', title: 'Journey', type: 'image' },
-            { id: 'dscf1411', title: 'Flow', type: 'image' },
             { id: 'dscf1679', title: 'Stillness', type: 'image' },
+            { id: 'dscf1411', title: 'Flow', type: 'image' },
+            { id: 'dscf1424', title: 'Journey', type: 'image' },
             // Row 2-3: Landscapes
-            { id: 'dscf1447', title: 'Light', type: 'image' },
-            { id: 'dscf1591', title: 'Community', type: 'image' },
             { id: 'dscf3619', title: 'Connection', type: 'image' },
-            { id: 'dscf0801', title: 'Breath', type: 'image' },
-            { id: 'dscf1314-2', title: 'Presence', type: 'image' },
+            { id: 'dscf1591', title: 'Community', type: 'image' },
+            { id: 'dscf1447', title: 'Light', type: 'image' },
             { id: 'dscf1420-2', title: 'Ground', type: 'image' },
+            { id: 'dscf1314-2', title: 'Presence', type: 'image' },
+            { id: 'dscf0801', title: 'Breath', type: 'image' },
             // Row 4: Portraits
-            { src: 'portfolio/IMG_8129.MP4', title: 'Motion', type: 'video' },
-            { id: 'img0440', title: 'Balance', type: 'image' },
             { id: 'dscf2274', title: 'Serenity', type: 'image' },
+            { id: 'img0440', title: 'Balance', type: 'image' },
+            { src: 'portfolio/IMG_8129.MP4', title: 'Motion', type: 'video' },
         ];
 
         // Helper to get optimized image paths

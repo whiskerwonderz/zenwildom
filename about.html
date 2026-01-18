@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — zen • wild • om</title>
+    <link rel="icon" href="zen-wild-om_favicon_1768766080_053b9644.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Questrial&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
@@ -140,10 +141,11 @@
         .page-header {
             display: grid;
             grid-template-columns: 1fr 1.6fr;
-            gap: 5rem;
+            column-gap: 5rem;
+            row-gap: 0.3rem;
             max-width: 1100px;
             margin: 0 auto;
-            padding: 8rem 2rem 2rem;
+            padding: 8rem 2rem 0;
             background: var(--bg-primary);
         }
 
@@ -158,16 +160,16 @@
         }
 
         .page-header p {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-            font-size: 1.1rem;
+            font-family: 'Questrial', sans-serif;
+            font-style: normal;
+            font-size: 1rem;
             color: var(--text-muted);
             grid-column: 2;
         }
 
         /* ==================== ABOUT SECTION ==================== */
         .about {
-            padding: 4rem 2rem 6rem;
+            padding: 1.5rem 2rem 6rem;
             max-width: 1100px;
             margin: 0 auto;
             display: grid;
@@ -298,7 +300,7 @@
         }
 
         .service p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: var(--text-muted);
             line-height: 1.8;
         }
@@ -335,12 +337,12 @@
         }
 
         .contact p {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
+            font-family: 'Questrial', sans-serif;
+            font-style: normal;
+            font-size: 1rem;
             color: var(--bg-primary);
             opacity: 0.7;
             margin-bottom: 2.5rem;
-            font-size: 1.1rem;
         }
 
         .contact-email {
@@ -613,7 +615,7 @@
             }
 
             .service p {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
 
             .contact {
@@ -724,7 +726,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html" class="active">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:zen.wild.om@gmail.com">Contact</a></li>
         </ul>
         <button class="menu-btn" aria-label="Menu">
             <span></span>
@@ -759,7 +761,7 @@
             <p>My path as a teacher began in Costa Rica in 2020. Since then, I have guided yoga across continents—Panama, Ecuador, Portugal, Hong Kong and Thailand. I have also trained to guide gong baths and the Navakaraṇa methodology, deepening my holistic practice. These practices shape how I see, listen, capture moments and curate stories.</p>
             <p>Somewhere along the journey, the camera became my practice.</p>
             <p>I work with yoga teachers and studios, eco-lodges and retreat hosts, holistic wellness and earth-inspired brands. My approach is quiet and intuitive, focused on documenting what is already there. Just honest, beautiful presence.</p>
-            <p>When I am not behind the camera, you will find me in my own practice and explorations—wild mountain trails, quiet islands, sunlit rice paddies—wherever stillness meets the untamed. Always drawn to the roads less travelled.</p>
+            <p>When I am not behind the camera, you will find me in my own practice and explorations—wild mountains, quiet islands, sunlit rice paddies—wherever stillness and zenness meets the wild and untamed. Always drawn to the roads less travelled.</p>
             <p>If this resonates, I would love to document your work.</p>
             <p class="signature">Crystal</p>
         </div>
@@ -773,7 +775,7 @@
         <div class="services-inner">
             <div class="service">
                 <div class="service-icon">○</div>
-                <h3>Retreat Documentation</h3>
+                <h3>Eco-lodge & Retreat</h3>
                 <p>Photography-focused visual storytelling that captures the essence of your retreat or eco-lodge experience.</p>
             </div>
             <div class="service">
@@ -783,7 +785,7 @@
             </div>
             <div class="service">
                 <div class="service-icon">□</div>
-                <h3>Movement & Video</h3>
+                <h3>Movement & Visual Stories</h3>
                 <p>Short-form video content that honours the flow. For website, social, or mindful promotional content.</p>
             </div>
         </div>
@@ -793,16 +795,15 @@
     <section class="contact" id="contact">
         <h2>Photography & Visual Storytelling</h2>
         <p>I work with eco-conscious lodges, wellness retreats, yoga studios, and holistic brands rooted in mindful living.</p>
-        <a href="mailto:hello@zenwildroam.com" class="contact-email">
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+        <a href="mailto:zen.wild.om@gmail.com" class="contact-email" aria-label="Send email">
+            <svg width="24" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor"/>
             </svg>
-            hello@zenwildroam.com
         </a>
     </section>
 
     <footer>
-        <p>© 2026 zen • wild • om</p>
+        <p>© 2026 zen • wild • om photography</p>
     </footer>
 </body>
 </html>
