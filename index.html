@@ -1008,7 +1008,7 @@
                 item.className = 'gallery-item';
 
                 if (img.type === 'video') {
-                    item.innerHTML = `<video src="${img.src}" muted loop playsinline></video>`;
+                    item.innerHTML = `<video src="${img.src}#t=0.001" muted loop playsinline preload="metadata"></video>`;
                     const video = item.querySelector('video');
                     item.addEventListener('mouseenter', () => video.play());
                     item.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
