@@ -79,6 +79,15 @@
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -900,7 +909,7 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">zen • wild • om</a>
+        <a href="#" class="logo"><img src="favicon.png" alt="" class="logo-icon">zen • wild • om</a>
         <ul class="nav-links">
             <li><a href="#gallery">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
