@@ -363,6 +363,10 @@
             margin-bottom: 2.5rem;
         }
 
+        .mobile-break {
+            display: none;
+        }
+
         .contact-cta {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
@@ -493,6 +497,10 @@
 
         /* Tablet Portrait (768px) */
         @media (max-width: 768px) {
+            .mobile-break {
+                display: inline;
+            }
+
             nav {
                 padding: 1rem 1.25rem;
             }
@@ -889,7 +897,7 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <h2>Photography & Visual Storytelling</h2>
-        <p>for people, spaces, and brands rooted in eco-conscious and mindful living</p>
+        <p>for people, spaces, and brands<br class="mobile-break"> rooted in eco-conscious and mindful living</p>
         <p class="contact-cta">Let's connect</p>
         <a href="mailto:zen.wild.om@gmail.com?subject=Photography%20Inquiry" class="contact-email">
             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
