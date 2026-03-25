@@ -355,6 +355,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.6rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .contact-cta {
@@ -856,6 +858,10 @@
                 font-size: 1rem;
             }
 
+            .contact-cta {
+                font-size: 1.1rem;
+            }
+
             .thumbnail-strip {
                 height: 60px;
                 padding: 6px 0.75rem;
@@ -864,6 +870,19 @@
             .thumbnail {
                 width: 44px;
                 height: 44px;
+            }
+
+            .lightbox-main {
+                padding: 50px 10px;
+            }
+
+            .lightbox-image {
+                max-height: calc(100vh - 150px);
+            }
+
+            .lightbox-nav {
+                padding: 0.75rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -921,6 +940,14 @@
 
             .contact-email {
                 font-size: 0.95rem;
+            }
+
+            .contact-cta {
+                font-size: 1rem;
+            }
+
+            .contact-row {
+                gap: 0.4rem;
             }
 
             .social-links {
