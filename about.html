@@ -371,6 +371,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.6rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .contact-cta {
@@ -496,6 +498,17 @@
 
             .contact {
                 padding: 5rem 2rem;
+            }
+        }
+
+        /* Tablet Portrait to Landscape (between 769-1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .page-header {
+                grid-template-columns: 0.5fr 1.6fr;
+            }
+
+            .about {
+                grid-template-columns: 0.8fr 1.6fr;
             }
         }
 
@@ -717,6 +730,10 @@
             .contact-email {
                 font-size: 1rem;
             }
+
+            .contact-cta {
+                font-size: 1.1rem;
+            }
         }
 
         /* Small Mobile (400px) */
@@ -781,6 +798,18 @@
 
             .contact h2 {
                 font-size: 1.5rem;
+            }
+
+            .contact-email {
+                font-size: 0.95rem;
+            }
+
+            .contact-cta {
+                font-size: 1rem;
+            }
+
+            .contact-row {
+                gap: 0.4rem;
             }
 
             footer p {
